@@ -1,90 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Panic Attacks</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="/style.css">
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-    crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"> </script>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/anx.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
+    ></script>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <section id="title">
-        <nav class="navbar navbar-expand-lg navbar-light ">
-          <div class="container-fluid">
-            <a class="navbar-brand"
-              href="/home.html">Mental Health</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="https://www.w3schools.com/html/default.asp">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Conditions
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="/anxiety.html">Anxiety</a>
-                    <a class="dropdown-item" href="/depression.html">Depression</a>
-                    <a class="dropdown-item" href="/stress.html">Stress</a>
-                    <a class="dropdown-item" href="/panicAttacks.html">Panic Attacks</a>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/quiz.html">Quiz</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/">Contact US</a>
-                </li>
-                <!--<li class="nav-item">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/home.html">Mental Health</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/home.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Conditions
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/anxiety.html">Anxiety</a>
+                  <a class="dropdown-item" href="/depression.html"
+                    >Depression</a
+                  >
+                  <a class="dropdown-item" href="/stress.html">Stress</a>
+                  <a class="dropdown-item" href="/panicAttacks.html"
+                    >Panic Attacks</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/quiz.html">Quiz</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/">Contact US</a>
+              </li>
+              <!--<li class="nav-item">
                     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                   </li> -->
-              </ul>
-            </div>
+            </ul>
           </div>
-        </nav>
-      </section>
-      
-<section id="nav">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
-        <ul class="nav justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.linkedin.com/in/vaishnavi-vadlamudi-7310a1158/"> <i
-                class="fab fa-linkedin"></i> LinkedIn</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://twitter.com/_aishna_"> <i class=" fab fa-twitter"></i> Twitter</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="https://www.instagram.com/_lens_explore_"> <i
-                class=" fab fa-instagram"></i> Instagram</a>
-          </li>
-          <!-- <li class="nav-item">
+        </div>
+      </nav>
+    </section>
+    <hr>
+    <section id="about">
+      <h1 class="h1">Panic Attacks</h1>
+      <div class="anxp">
+        <img
+          class="anx"
+          src="https://images.pexels.com/photos/7193896/pexels-photo-7193896.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="mental health"
+        />
+        <p style="text-align: left; padding: 10px 50px">
+            A panic attack causes sudden, brief feelings of fear and strong physical reactions in response to ordinary, nonthreatening situations. When you’re having a panic attack, you may sweat a lot, have difficulty breathing and feel like your heart is racing.Panic attacks occur suddenly and without warning. There’s no way to stop a panic attack after it starts. Symptoms usually peak within 10 minutes after an attack starts
+          <br />
+          <br />
+          <br />
+          If you have panic attack symptoms, seek medical help as soon as possible. Panic attacks, while intensely uncomfortable, are not dangerous. But panic attacks are hard to manage on your own, and they may get worse without treatment.
+
+          Panic attack symptoms can also resemble symptoms of other serious health problems, such as a heart attack, so it's important to get evaluated by your primary care provider if you aren't sure what's causing your symptoms.
+          Many people have just one or two panic attacks in their lifetimes, and the problem goes away, perhaps when a stressful situation ends. But if you've had recurrent, unexpected panic attacks and spent long periods in constant fear of another attack, you may have a condition called panic disorder.
+          
+        </p>
+      </div>
+      <div class="symp">
+        <h3 style="color: #000; font-size: 2rem">Symptoms</h3>
+        <p>Anxiety has both physical and mental effects. These include:</p>
+        <ul>
+          <li>Chest pain</li>
+          <li> Chills</li>
+          <li>     Choking or smothering sensation</li>
+          <li>  Difficulty breathing</li>
+          <li>  Fear of losing control</li>
+          <li>   Feeling like you’re going to die.</li>
+        </ul>
+
+        <p>
+          Most of these symptoms will feel familiar even if you don’t have
+          significant problems with anxiety. But when they’re severe, recurring,
+          and upsetting enough to make you feel extremely uncomfortable, out of
+          control, or helpless, this might signal an panic attack.
+        </p>
+      </div>
+    </section>
+    <section id="nav">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+              >
+                <i class="fab fa-linkedin"></i> LinkedIn</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fab fa-twitter"></i> Twitter</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+              >
+                <i class="fab fa-instagram"></i> Instagram</a
+              >
+            </li>
+            <!-- <li class="nav-item">
                   <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                 </li>  -->
- </ul>
-      </div>
-      
-            </nav>  
+          </ul>
+        </div>
+      </nav>
+    </section>
+    <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible">Chat with us!
+            <i id="chat-icon" style="color: #fff;" class="fas fa-comment"></i>
+        </button>
+    <div class="content">
+      <div class="full-chat-block">
+        <!-- Message Container -->
+        <div class="outer-container">
+          <div class="chat-container">
+            <!-- Messages -->
+            <div id="chatbox">
+              <h5 id="chat-timestamp"></h5>
+              <p id="botStarterMessage" class="botText">
+                <span>Loading...</span>
+              </p>
+            </div>
 
-</section>
-</body>
+            <!-- User input box -->
+            <div class="chat-bar-input-block">
+              <div id="userInput">
+                <input
+                  id="textInput"
+                  class="input-box"
+                  type="text"
+                  name="msg"
+                  placeholder="Tap 'Enter' to send a message"
+                />
+                <p></p>
+              </div>
+
+              <div class="chat-bar-icons">
+                <i
+                  id="chat-icon"
+                  style="color: crimson"
+                  class="fa fa-fw fa-heart"
+                  onclick="heartButton()"
+                ></i>
+                <i
+                  id="chat-icon"
+                  style="color: #333"
+                  class="fas fa-arrow-right"
+                  onclick="sendButton()"
+                ></i>
+              </div>
+            </div>
+
+            <div id="chat-bar-bottom">
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="/app.js"></script>
+  <script src="/response.js"></script>
 </html>
